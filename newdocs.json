@@ -1,0 +1,688 @@
+[
+    {
+        "comment": "/**\n * Class representing a game with a host and a user\n */",
+        "meta": {
+            "range": [
+                13271,
+                31595
+            ],
+            "filename": "server.js",
+            "lineno": 299,
+            "columnno": 0,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100001324",
+                "name": "Game",
+                "type": "ClassDeclaration",
+                "paramnames": [
+                    "hostId",
+                    "pin",
+                    "gameId",
+                    "emit",
+                    "user"
+                ]
+            }
+        },
+        "name": "Game",
+        "longname": "Game",
+        "kind": "class",
+        "classdesc": "Class representing a game with a host and a user",
+        "scope": "global",
+        "description": "Constructor to create a game and set used variables",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "The Id of the host",
+                "name": "hostId"
+            },
+            {
+                "type": {
+                    "names": [
+                        "int"
+                    ]
+                },
+                "description": "The pin used to connect to the game",
+                "name": "pin"
+            },
+            {
+                "type": {
+                    "names": [
+                        "int"
+                    ]
+                },
+                "description": "The Id of the game from the database",
+                "name": "gameId"
+            },
+            {
+                "type": {
+                    "names": [
+                        "function"
+                    ]
+                },
+                "description": "A function that is used to allow the game to send data to a target",
+                "name": "emit"
+            }
+        ]
+    },
+    {
+        "comment": "/**\n     * Used to start the game\n     */",
+        "meta": {
+            "range": [
+                14258,
+                14545
+            ],
+            "filename": "server.js",
+            "lineno": 333,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100001427",
+                "name": "Game#start",
+                "type": "MethodDefinition",
+                "paramnames": []
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Used to start the game",
+        "name": "start",
+        "longname": "Game#start",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance",
+        "params": []
+    },
+    {
+        "comment": "/**\n     * Sets the target action as the next action\n     */",
+        "meta": {
+            "range": [
+                14620,
+                15288
+            ],
+            "filename": "server.js",
+            "lineno": 343,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100001462",
+                "name": "Game#getNextAction",
+                "type": "MethodDefinition",
+                "paramnames": []
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Sets the target action as the next action",
+        "name": "getNextAction",
+        "longname": "Game#getNextAction",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance",
+        "params": []
+    },
+    {
+        "comment": "/**\n     * Gets a random question from the database\n     * @returns Random Question\n     */",
+        "meta": {
+            "range": [
+                15390,
+                15540
+            ],
+            "filename": "server.js",
+            "lineno": 363,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100001541",
+                "name": "Game#getRandomQuestion",
+                "type": "MethodDefinition",
+                "paramnames": []
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Gets a random question from the database",
+        "returns": [
+            {
+                "description": "Random Question"
+            }
+        ],
+        "name": "getRandomQuestion",
+        "longname": "Game#getRandomQuestion",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance",
+        "params": []
+    },
+    {
+        "comment": "/**\n     * Shorthand for updateVariable\n     * @see {@link Game#updateVariable}\n     */",
+        "meta": {
+            "range": [
+                15642,
+                15705
+            ],
+            "filename": "server.js",
+            "lineno": 371,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100001568",
+                "name": "Game#uV",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "text",
+                    "variable"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Shorthand for updateVariable",
+        "see": [
+            "{@link Game#updateVariable}"
+        ],
+        "name": "uV",
+        "longname": "Game#uV",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance",
+        "params": []
+    },
+    {
+        "comment": "/**\n     * Updates the text with a variable, replacing the code with the correct text.\n     * @param {String} text The Input text\n     * @param {Object} variable The Variable to update\n     * @returns The updated text\n     */",
+        "meta": {
+            "range": [
+                15958,
+                16469
+            ],
+            "filename": "server.js",
+            "lineno": 379,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100001581",
+                "name": "Game#updateVariable",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "text",
+                    "variable"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Updates the text with a variable, replacing the code with the correct text.",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "The Input text",
+                "name": "text"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "description": "The Variable to update",
+                "name": "variable"
+            }
+        ],
+        "returns": [
+            {
+                "description": "The updated text"
+            }
+        ],
+        "name": "updateVariable",
+        "longname": "Game#updateVariable",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n     * Shorthand for update variable array\n     * @see {@link Game#updateVariableArray}\n     */",
+        "meta": {
+            "range": [
+                16579,
+                16660
+            ],
+            "filename": "server.js",
+            "lineno": 392,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100001661",
+                "name": "Game#uVA",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "array",
+                    "variable",
+                    "tag"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Shorthand for update variable array",
+        "see": [
+            "{@link Game#updateVariableArray}"
+        ],
+        "name": "uVA",
+        "longname": "Game#uVA",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance",
+        "params": []
+    },
+    {
+        "comment": "/**\n     * Goes through an array and updates a particular tag of the items in that array. \n     * @param {Object[]} array The array of items to be changed\n     * @param {Object} variable The variable to be updated\n     * @param {String} tag The tag of the field to be changed\n     * @returns The changed array\n     */",
+        "meta": {
+            "range": [
+                16992,
+                17299
+            ],
+            "filename": "server.js",
+            "lineno": 401,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100001676",
+                "name": "Game#updateVariableArray",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "array",
+                    "variable",
+                    "tag"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Goes through an array and updates a particular tag of the items in that array.",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Array.<Object>"
+                    ]
+                },
+                "description": "The array of items to be changed",
+                "name": "array"
+            },
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "description": "The variable to be updated",
+                "name": "variable"
+            },
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "The tag of the field to be changed",
+                "name": "tag"
+            }
+        ],
+        "returns": [
+            {
+                "description": "The changed array"
+            }
+        ],
+        "name": "updateVariableArray",
+        "longname": "Game#updateVariableArray",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n     * Shorthand for update variable question\n     * @see {@link Game#updateVariableQuestion}\n     */",
+        "meta": {
+            "range": [
+                17415,
+                17491
+            ],
+            "filename": "server.js",
+            "lineno": 414,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100001704",
+                "name": "Game#uVQ",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "object",
+                    "variable"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Shorthand for update variable question",
+        "see": [
+            "{@link Game#updateVariableQuestion}"
+        ],
+        "name": "uVQ",
+        "longname": "Game#uVQ",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance",
+        "params": []
+    },
+    {
+        "comment": "/**\n     * Updates a question object with a provided variable\n     * @param {Object} object The question object to be changed\n     * @param {String} variable The variable to update with\n     * @returns The changed object\n     */",
+        "meta": {
+            "range": [
+                17730,
+                18057
+            ],
+            "filename": "server.js",
+            "lineno": 422,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100001717",
+                "name": "Game#updateVariableQuestion",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "object",
+                    "variable"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Updates a question object with a provided variable",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "description": "The question object to be changed",
+                "name": "object"
+            },
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "The variable to update with",
+                "name": "variable"
+            }
+        ],
+        "returns": [
+            {
+                "description": "The changed object"
+            }
+        ],
+        "name": "updateVariableQuestion",
+        "longname": "Game#updateVariableQuestion",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n     * Gets the questions and sends it to the players\n     */",
+        "meta": {
+            "range": [
+                18133,
+                26219
+            ],
+            "filename": "server.js",
+            "lineno": 434,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100001751",
+                "name": "Game#getQuestion",
+                "type": "MethodDefinition",
+                "paramnames": []
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Gets the questions and sends it to the players",
+        "name": "getQuestion",
+        "longname": "Game#getQuestion",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance",
+        "params": []
+    },
+    {
+        "comment": "/**\n     * Called once all ansers are subited or time is over.\n     */",
+        "meta": {
+            "range": [
+                26300,
+                26853
+            ],
+            "filename": "server.js",
+            "lineno": 584,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100002369",
+                "name": "Game#endRound",
+                "type": "MethodDefinition",
+                "paramnames": []
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Called once all ansers are subited or time is over.",
+        "name": "endRound",
+        "longname": "Game#endRound",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance",
+        "params": []
+    },
+    {
+        "comment": "/**\n     * Calculates the scores for each player and sets variables \n     */",
+        "meta": {
+            "range": [
+                26940,
+                29232
+            ],
+            "filename": "server.js",
+            "lineno": 600,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100002438",
+                "name": "Game#calculateScores",
+                "type": "MethodDefinition",
+                "paramnames": []
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Calculates the scores for each player and sets variables",
+        "name": "calculateScores",
+        "longname": "Game#calculateScores",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance",
+        "params": []
+    },
+    {
+        "comment": "/**\n     * adds new answer for when a user has submitted a response.\n     * @param {Object} data The Data from the quesiton\n     * @param {String} answer The Provided answer\n     * @param {String} senderId The Id of the sender\n     */",
+        "meta": {
+            "range": [
+                29481,
+                29837
+            ],
+            "filename": "server.js",
+            "lineno": 642,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100002644",
+                "name": "Game#recieveAnswer",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "data",
+                    "answer",
+                    "senderId"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "adds new answer for when a user has submitted a response.",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "description": "The Data from the quesiton",
+                "name": "data"
+            },
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "The Provided answer",
+                "name": "answer"
+            },
+            {
+                "type": {
+                    "names": [
+                        "String"
+                    ]
+                },
+                "description": "The Id of the sender",
+                "name": "senderId"
+            }
+        ],
+        "name": "recieveAnswer",
+        "longname": "Game#recieveAnswer",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance"
+    },
+    {
+        "comment": "/**\n     * Gets the game Json from the database\n     * @async\n     */",
+        "meta": {
+            "range": [
+                29917,
+                30317
+            ],
+            "filename": "server.js",
+            "lineno": 657,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100002683",
+                "name": "Game#getGameData",
+                "type": "MethodDefinition",
+                "paramnames": []
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Gets the game Json from the database",
+        "async": true,
+        "name": "getGameData",
+        "longname": "Game#getGameData",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance",
+        "params": []
+    },
+    {
+        "comment": "/**\n     * Adds a new player to the game\n     * @param {Object} playerData The Data of the next player to be added\n     * @param {funciton} callback Function to send data back to the player\n     * @returns Returns when quitting due to error\n     */",
+        "meta": {
+            "range": [
+                30576,
+                31592
+            ],
+            "filename": "server.js",
+            "lineno": 673,
+            "columnno": 4,
+            "path": "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer",
+            "code": {
+                "id": "astnode100002736",
+                "name": "Game#addNewPlayer",
+                "type": "MethodDefinition",
+                "paramnames": [
+                    "playerData",
+                    "callback"
+                ]
+            },
+            "vars": {
+                "": null
+            }
+        },
+        "description": "Adds a new player to the game",
+        "params": [
+            {
+                "type": {
+                    "names": [
+                        "Object"
+                    ]
+                },
+                "description": "The Data of the next player to be added",
+                "name": "playerData"
+            },
+            {
+                "type": {
+                    "names": [
+                        "funciton"
+                    ]
+                },
+                "description": "Function to send data back to the player",
+                "name": "callback"
+            }
+        ],
+        "returns": [
+            {
+                "description": "Returns when quitting due to error"
+            }
+        ],
+        "name": "addNewPlayer",
+        "longname": "Game#addNewPlayer",
+        "kind": "function",
+        "memberof": "Game",
+        "scope": "instance"
+    },
+    {
+        "kind": "package",
+        "longname": "package:undefined",
+        "files": [
+            "/home/sam/Desktop/Repos/deviceBattle/deviceBattleServer/server.js"
+        ]
+    }
+]
